@@ -1,0 +1,66 @@
+{
+  "entities": {
+    "Student": {
+      "title": "Student",
+      "description": "Data biodata siswa kelas XII DKV dan saudaranya",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "no": { "type": "number" },
+        "nama": { "type": "string" },
+        "tempatLahir": { "type": "string" },
+        "tanggalLahir": { "type": "string" },
+        "alamat": { "type": "string" },
+        "noHpWhatsapp": { "type": "string" },
+        "namaWali": { "type": "string" },
+        "noHpWhatsappWali": { "type": "string" },
+        "jumlahSaudara": { "type": "number" },
+        "saudara": { "type": "array" },
+        "isCompleted": { "type": "boolean" },
+        "updatedAt": { "type": "string" },
+        "filledBy": { "type": "string" }
+      },
+      "required": ["id", "no", "nama"]
+    },
+    "SchoolSettings": {
+      "title": "SchoolSettings",
+      "description": "Pengaturan nama sekolah, kelas, tahun ajaran, dan data wali kelas",
+      "type": "object",
+      "properties": {
+        "schoolName": { "type": "string" },
+        "className": { "type": "string" },
+        "academicYear": { "type": "string" },
+        "waliKelasName": { "type": "string" },
+        "waliKelasNip": { "type": "string" },
+        "headOfProgramName": { "type": "string" },
+        "headOfProgramNip": { "type": "string" }
+      },
+      "required": ["schoolName", "className", "academicYear", "waliKelasName"]
+    },
+    "AdminAuth": {
+      "title": "AdminAuth",
+      "description": "Data autentikasi kata sandi administrator",
+      "type": "object",
+      "properties": {
+        "passwordHash": { "type": "string" },
+        "passwordSalt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["passwordHash", "passwordSalt"]
+    }
+  },
+  "firestore": {
+    "/students/{studentId}": {
+      "schema": { "$ref": "#/entities/Student" },
+      "description": "Koleksi data siswa dan saudaranya yang dapat diakses oleh semua perangkat"
+    },
+    "/settings/config": {
+      "schema": { "$ref": "#/entities/SchoolSettings" },
+      "description": "Dokumen konfigurasi nama sekolah dan wali kelas"
+    },
+    "/adminAuth/credentials": {
+      "schema": { "$ref": "#/entities/AdminAuth" },
+      "description": "Dokumen kredensial password admin terenkripsi"
+    }
+  }
+}

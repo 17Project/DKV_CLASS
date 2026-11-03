@@ -39,7 +39,7 @@ export default function App() {
     return localStorage.getItem('xii_dkv_admin_auth') === 'true';
   });
 
-  // Load Data
+  // Load Data & Subscribe Real-time
   const loadData = useCallback(async () => {
     try {
       setIsLoading(true);
@@ -65,6 +65,22 @@ export default function App() {
 
   useEffect(() => {
     loadData();
+
+    // Subscribe to real-time student updates across all devices
+    const unsubscribeStudents = api.subscribeStudents((updatedStudents) => {
+      setStudents(updatedStudents);
+      api.getStats().then(setStats).catch(console.error);
+    });
+
+    // Subscribe to real-time school settings updates
+    const unsubscribeSettings = api.subscribeSettings((updatedSettings) => {
+      setSettings(updatedSettings);
+    });
+
+    return () => {
+      if (unsubscribeStudents) unsubscribeStudents();
+      if (unsubscribeSettings) unsubscribeSettings();
+    };
   }, [loadData]);
 
   // Handle Save Settings (School name & Wali Kelas)
