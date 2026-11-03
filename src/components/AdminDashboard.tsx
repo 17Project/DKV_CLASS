@@ -9,6 +9,8 @@ import {
   Trash2,
   Edit,
   Eye,
+  EyeOff,
+  HelpCircle,
   LogOut,
   Search,
   CheckCircle2,
@@ -58,6 +60,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 }) => {
   // Login Form State
   const [passwordInput, setPasswordInput] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [loginError, setLoginError] = useState('');
   const [isLoggingIn, setIsLoggingIn] = useState(false);
 
@@ -104,28 +107,58 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           </p>
 
           {loginError && (
-            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-xl text-xs text-red-700 font-medium text-center">
-              {loginError}
+            <div className="mb-5 p-3.5 bg-red-50 border border-red-200 rounded-xl text-xs text-red-700 font-medium">
+              <div className="flex items-start space-x-2">
+                <span className="font-bold shrink-0">Perhatian:</span>
+                <div>
+                  <p>{loginError}</p>
+                  <p className="mt-1 text-[11px] text-red-600">
+                    Gunakan password bawaan: <code className="bg-red-100 px-1 py-0.5 rounded font-mono font-bold text-red-800">admin</code>
+                  </p>
+                </div>
+              </div>
             </div>
           )}
 
           <form onSubmit={handleLoginSubmit} className="space-y-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
-                Password Administrator
-              </label>
-              <input
-                type="password"
-                placeholder="Masukkan password admin..."
-                value={passwordInput}
-                onChange={(e) => setPasswordInput(e.target.value)}
-                className="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-hidden"
-                required
-                autoFocus
-              />
-              <p className="text-[11px] text-slate-400 mt-1">
-                Password bawaan awal: <code className="bg-slate-100 px-1 py-0.5 rounded text-slate-600 font-mono">admin</code> (dapat diubah kapan saja)
-              </p>
+              <div className="flex items-center justify-between mb-1">
+                <label className="block text-xs font-semibold text-slate-700">
+                  Password Administrator
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setPasswordInput('admin')}
+                  className="text-[11px] font-bold text-indigo-600 hover:text-indigo-800 hover:underline"
+                >
+                  Isi Otomatis: admin
+                </button>
+              </div>
+
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder="Masukkan password admin..."
+                  value={passwordInput}
+                  onChange={(e) => setPasswordInput(e.target.value)}
+                  className="w-full pl-3.5 pr-10 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-hidden"
+                  required
+                  autoFocus
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-3 text-slate-400 hover:text-slate-600"
+                  tabIndex={-1}
+                >
+                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                </button>
+              </div>
+
+              <div className="flex items-center justify-between mt-2 text-[11px] text-slate-500">
+                <span>Password bawaan: <code className="bg-slate-100 px-1.5 py-0.5 rounded text-slate-700 font-mono font-bold">admin</code></span>
+                <span className="text-slate-400">atau: <code className="bg-slate-100 px-1 py-0.5 rounded text-slate-600 font-mono">admin123</code></span>
+              </div>
             </div>
 
             <button
