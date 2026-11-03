@@ -1,0 +1,6 @@
+{
+  "name": "Sistem Biodata Siswa XII DKV",
+  "description": "Sistem pendataan biodata siswa kelas XII DKV 2026/2027 terintegrasi database multi-perangkat, akses admin, laporan Excel/PDF, status pendidikan saudara, serta reset data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

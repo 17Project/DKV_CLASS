@@ -1,0 +1,320 @@
+{
+  "adminPasswordHash": "718f876a9e27ed10b3842828177088579c0da3655db8d7a384aabb0345342edc96017353acd4f03e8df2fe88ea5d04d1aa9c708773def700102be3d9d75d3f05",
+  "adminPasswordSalt": "3f3591933672e843246db163e41aedbc",
+  "students": [
+    {
+      "id": "std_1",
+      "no": 1,
+      "nama": "AURA CANDRA DEWI",
+      "tempatLahir": "Jakarta",
+      "tanggalLahir": "2008-05-14",
+      "alamat": "Jl. Melati Indah No. 12, Jakarta Barat",
+      "noHpWhatsapp": "081234567891",
+      "namaWali": "Bambang Sudarsono",
+      "noHpWhatsappWali": "081298765431",
+      "jumlahSaudara": 2,
+      "saudara": [
+        {
+          "id": "sib_1_1",
+          "nama": "Bintang Candra Utama",
+          "statusPendidikan": "Masih Sekolah",
+          "tempatPendidikan": "SMP Negeri 1 Jakarta (Kelas 9)"
+        },
+        {
+          "id": "sib_1_2",
+          "nama": "Citra Kirana",
+          "statusPendidikan": "Sudah Tamat Sekolah",
+          "tempatPendidikan": "Universitas Indonesia (S1 DKV)"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "siswa"
+    },
+    {
+      "id": "std_2",
+      "no": 2,
+      "nama": "CELLY CAKRAWATI",
+      "tempatLahir": "Bandung",
+      "tanggalLahir": "2008-08-22",
+      "alamat": "Jl. Dipati Ukur No. 45, Bandung",
+      "noHpWhatsapp": "081324567802",
+      "namaWali": "Cakrawati Sri Mulyani",
+      "noHpWhatsappWali": "081398765402",
+      "jumlahSaudara": 1,
+      "saudara": [
+        {
+          "id": "sib_2_1",
+          "nama": "Rian Cakrawala",
+          "statusPendidikan": "Sudah Tamat Sekolah",
+          "tempatPendidikan": "Politeknik Negeri Bandung"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "siswa"
+    },
+    {
+      "id": "std_3",
+      "no": 3,
+      "nama": "DAVID",
+      "tempatLahir": "Surabaya",
+      "tanggalLahir": "2008-03-10",
+      "alamat": "Komplek Permata Hijau Blok C No. 8",
+      "noHpWhatsapp": "082134567803",
+      "namaWali": "Hendra Tanuwijaya",
+      "noHpWhatsappWali": "082198765403",
+      "jumlahSaudara": 2,
+      "saudara": [
+        {
+          "id": "sib_3_1",
+          "nama": "Jonathan",
+          "statusPendidikan": "Masih Sekolah",
+          "tempatPendidikan": "SMA Kristen 1 (Kelas 10)"
+        },
+        {
+          "id": "sib_3_2",
+          "nama": "Jessica",
+          "statusPendidikan": "Sudah Tamat Sekolah",
+          "tempatPendidikan": "Universitas Surabaya (Bekerja di Studio Animasi)"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "admin"
+    },
+    {
+      "id": "std_4",
+      "no": 4,
+      "nama": "DELLYN",
+      "tempatLahir": "Medan",
+      "tanggalLahir": "2008-11-05",
+      "alamat": "Jl. Cemara Asri No. 19, Medan",
+      "noHpWhatsapp": "085234567804",
+      "namaWali": "William Chen",
+      "noHpWhatsappWali": "085298765404",
+      "jumlahSaudara": 0,
+      "saudara": [],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "siswa"
+    },
+    {
+      "id": "std_5",
+      "no": 5,
+      "nama": "DELVIN",
+      "tempatLahir": "Semarang",
+      "tanggalLahir": "2008-01-18",
+      "alamat": "Jl. Pahlawan No. 70, Semarang",
+      "noHpWhatsapp": "087834567805",
+      "namaWali": "Agus Santoso",
+      "noHpWhatsappWali": "087898765405",
+      "jumlahSaudara": 3,
+      "saudara": [
+        {
+          "id": "sib_5_1",
+          "nama": "Kevin Santoso",
+          "statusPendidikan": "Sudah Tamat Sekolah",
+          "tempatPendidikan": "Undip Semarang (Wirausaha Grafika)"
+        },
+        {
+          "id": "sib_5_2",
+          "nama": "Clarissa Santoso",
+          "statusPendidikan": "Masih Sekolah",
+          "tempatPendidikan": "SMP Negeri 2 Semarang"
+        },
+        {
+          "id": "sib_5_3",
+          "nama": "Daniel Santoso",
+          "statusPendidikan": "Masih Sekolah",
+          "tempatPendidikan": "SD Kanisius"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "siswa"
+    },
+    {
+      "id": "std_6",
+      "no": 6,
+      "nama": "DINA SAFIRA RIAUNA ROMADHANI",
+      "tempatLahir": "Malang",
+      "tanggalLahir": "2008-09-30",
+      "alamat": "Jl. Ijen Boulevard No. 88, Malang",
+      "noHpWhatsapp": "089634567806",
+      "namaWali": "Romadhoni Kurniawan",
+      "noHpWhatsappWali": "089698765406",
+      "jumlahSaudara": 1,
+      "saudara": [
+        {
+          "id": "sib_6_1",
+          "nama": "Farhan Romadhani",
+          "statusPendidikan": "Masih Sekolah",
+          "tempatPendidikan": "Universitas Brawijaya (Teknik Informatika Smt 3)"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "siswa"
+    },
+    {
+      "id": "std_7",
+      "no": 7,
+      "nama": "EVI JESSTINA",
+      "tempatLahir": "Tangerang",
+      "tanggalLahir": "2008-07-12",
+      "alamat": "Jl. Villa Melati Mas Blok A4 No. 15",
+      "noHpWhatsapp": "081234567807",
+      "namaWali": "Jesstina Hartono",
+      "noHpWhatsappWali": "081298765407",
+      "jumlahSaudara": 1,
+      "saudara": [
+        {
+          "id": "sib_7_1",
+          "nama": "Evan Hartono",
+          "statusPendidikan": "Masih Sekolah",
+          "tempatPendidikan": "SMA Bina Nusantara (Kelas 11)"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "siswa"
+    },
+    {
+      "id": "std_8",
+      "no": 8,
+      "nama": "EZRA",
+      "tempatLahir": "Yogyakarta",
+      "tanggalLahir": "2008-04-03",
+      "alamat": "Jl. Kaliurang KM 6 No. 24, Sleman",
+      "noHpWhatsapp": "082234567808",
+      "namaWali": "Yohanes Prasetyo",
+      "noHpWhatsappWali": "082298765408",
+      "jumlahSaudara": 2,
+      "saudara": [
+        {
+          "id": "sib_8_1",
+          "nama": "Eunike Prasetyo",
+          "statusPendidikan": "Sudah Tamat Sekolah",
+          "tempatPendidikan": "ISI Yogyakarta (Freelance Ilustrator)"
+        },
+        {
+          "id": "sib_8_2",
+          "nama": "Eliezer Prasetyo",
+          "statusPendidikan": "Masih Sekolah",
+          "tempatPendidikan": "SD Budi Mulia Dua"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "siswa"
+    },
+    {
+      "id": "std_9",
+      "no": 9,
+      "nama": "MERLIN",
+      "tempatLahir": "Pontianak",
+      "tanggalLahir": "2008-12-14",
+      "alamat": "Jl. Gajah Mada No. 102, Pontianak",
+      "noHpWhatsapp": "",
+      "namaWali": "",
+      "noHpWhatsappWali": "",
+      "jumlahSaudara": 0,
+      "saudara": [],
+      "isCompleted": false,
+      "updatedAt": "2026-11-03T09:05:24.707Z"
+    },
+    {
+      "id": "std_10",
+      "no": 10,
+      "nama": "NABILA",
+      "tempatLahir": "Bekasi",
+      "tanggalLahir": "2008-06-25",
+      "alamat": "Harapan Indah Blok FB No. 3",
+      "noHpWhatsapp": "083834567810",
+      "namaWali": "Nur Hidayat",
+      "noHpWhatsappWali": "083898765410",
+      "jumlahSaudara": 2,
+      "saudara": [
+        {
+          "id": "sib_10_1",
+          "nama": "Aisyah Putri",
+          "statusPendidikan": "Masih Sekolah",
+          "tempatPendidikan": "SMPIT Al-Azhar"
+        },
+        {
+          "id": "sib_10_2",
+          "nama": "Rizky Pratama",
+          "statusPendidikan": "Sudah Tamat Sekolah",
+          "tempatPendidikan": "SMK Negeri 1 Bekasi (Karyawan Swasta)"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "siswa"
+    },
+    {
+      "id": "std_11",
+      "no": 11,
+      "nama": "STEVEN",
+      "tempatLahir": "Jakarta",
+      "tanggalLahir": "",
+      "alamat": "",
+      "noHpWhatsapp": "",
+      "namaWali": "",
+      "noHpWhatsappWali": "",
+      "jumlahSaudara": 0,
+      "saudara": [],
+      "isCompleted": false,
+      "updatedAt": "2026-11-03T09:05:24.707Z"
+    },
+    {
+      "id": "std_12",
+      "no": 12,
+      "nama": "TAURUS WINATA",
+      "tempatLahir": "Palembang",
+      "tanggalLahir": "2008-05-02",
+      "alamat": "Jl. R. Sukamto No. 40, Palembang",
+      "noHpWhatsapp": "085734567812",
+      "namaWali": "Gunawan Winata",
+      "noHpWhatsappWali": "085798765412",
+      "jumlahSaudara": 1,
+      "saudara": [
+        {
+          "id": "sib_12_1",
+          "nama": "Leo Winata",
+          "statusPendidikan": "Sudah Tamat Sekolah",
+          "tempatPendidikan": "Universitas Bina Darma"
+        }
+      ],
+      "isCompleted": true,
+      "updatedAt": "2026-11-03T09:05:24.707Z",
+      "filledBy": "admin"
+    },
+    {
+      "id": "std_13",
+      "no": 13,
+      "nama": "TRINETTA ANGELICA",
+      "tempatLahir": "Denpasar",
+      "tanggalLahir": "",
+      "alamat": "",
+      "noHpWhatsapp": "",
+      "namaWali": "",
+      "noHpWhatsappWali": "",
+      "jumlahSaudara": 0,
+      "saudara": [],
+      "isCompleted": false,
+      "updatedAt": "2026-11-03T09:05:24.707Z"
+    }
+  ],
+  "lastUpdated": "2026-11-03T09:19:06.089Z",
+  "settings": {
+    "schoolName": "SMK NEGERI KREATIF NUSANTARA",
+    "className": "XII DKV (Desain Komunikasi Visual)",
+    "academicYear": "2026/2027",
+    "waliKelasName": "Drs. H. Mulyadi, M.Pd.",
+    "waliKelasNip": "19780512 200312 1 004",
+    "headOfProgramName": "Budi Santoso, S.Sn., M.Ds.",
+    "headOfProgramNip": "19820719 200801 1 007"
+  }
+}
